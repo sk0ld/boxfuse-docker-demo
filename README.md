@@ -12,14 +12,17 @@ apt update && apt install -y git docker.io
 Cloning repository & preparing docker image:
 
 git clone https://github.com/sk0ld/boxfuse-docker-demo.git
+
 cd boxfuse-docker-demo/
+
 docker build -t boxfuse-docker .
 
 To check docker images:
+
 docker images
 
 
-To run deocker container with boxfuse app:
+To run docker container with boxfuse app:
 
 docker run -itd -p 8080:8080 --name demo-boxfuse-app boxfuse-docker
 
