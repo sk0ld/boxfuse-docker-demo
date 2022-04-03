@@ -17,8 +17,7 @@ To check docker images:
 docker images
 
 
-
-To run deocker image with boxfuse app:
+To run deocker container with boxfuse app:
 docker run -itd -p 8080:8080 --name demo-boxfuse-app boxfuse-docker
 
 To check docker processes:
