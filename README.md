@@ -30,3 +30,7 @@ CONTAINER ID   IMAGE            COMMAND             CREATED          STATUS     
 
 To access app via browser:
 http://your_ip_or_hostname:8080/hello-1.0/
+
+To stop container:
+docker container stop demo-boxfuse-app
+
