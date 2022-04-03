@@ -1,7 +1,8 @@
 FROM ubuntu:20.04
+ENV TZ=Europe/Moscow
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt update
 RUN apt install -y git default-jdk
-RUN dpkg-reconfigure --frontend noninteractive tzdata
 RUN apt install -y maven tomcat9
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN cd ./boxfuse-sample-java-war-hello/  && mvn package
